@@ -5,11 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>前端监控sdk</title>
-  <script defer src="bundle.js"></script>
-</head>
+<script defer src="bundle.js"></script></head>
 
 <body>
-
+  <button onclick="onclick()">点击报错</button>
+  <script>
+    function onclick(e) {
+      console.log('first')
+      // window.a.b = 10
+    }
+  </script>
 </body>
 
 </html>
